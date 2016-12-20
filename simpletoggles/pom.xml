@@ -6,6 +6,13 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>com.thoughtworks.simpletoggles</groupId>
+        <artifactId>simpletoggles-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -26,4 +33,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <site>
+            <id>maven-site</id>
+            <name>Simple Toggles</name>
+            <!-- Not used unless you try to deploy -->
+            <url>file://${root.build.outputDirectory}/staging/${project.artifactId}/</url>
+        </site>
+    </distributionManagement>
 </project>

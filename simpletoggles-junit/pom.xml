@@ -9,6 +9,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <parent>
+        <groupId>com.thoughtworks.simpletoggles</groupId>
+        <artifactId>simpletoggles-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>com.thoughtworks.simpletoggles</groupId>
@@ -31,4 +38,13 @@
             <version>4.10</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <site>
+            <id>maven-site</id>
+            <name>Simple Toggles</name>
+            <!-- Not used unless you try to deploy -->
+            <url>file://${root.build.outputDirectory}/staging/${project.artifactId}/</url>
+        </site>
+    </distributionManagement>
 </project>
