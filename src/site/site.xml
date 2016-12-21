@@ -12,6 +12,9 @@
     </skin>
 
     <body>
+        <menu name="Stuff">
+            <item name="Overview" href="overview.html"/>
+        </menu>
         <menu ref="parent"/>
         <menu ref="modules"/>
         <menu ref="reports"/>
