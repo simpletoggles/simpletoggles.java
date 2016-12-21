@@ -8,4 +8,4 @@ mvn clean install
 mvn site site:stage site:stage-deploy
 ```
 
-And then open `target/staging/index.html`.
+And then open `target/finalSite/staging/index.html`.

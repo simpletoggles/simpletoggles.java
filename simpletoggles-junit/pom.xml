@@ -44,7 +44,7 @@
             <id>maven-site</id>
             <name>Simple Toggles</name>
             <!-- Not used unless you try to deploy -->
-            <url>file://${root.build.outputDirectory}/staging/${project.artifactId}/</url>
+            <url>file://${root.build.outputDirectory}/finalSite/${project.artifactId}/</url>
         </site>
     </distributionManagement>
 </project>
