@@ -39,7 +39,7 @@
             <id>maven-site</id>
             <name>Simple Toggles</name>
             <!-- Not used unless you try to deploy -->
-            <url>file://${root.build.outputDirectory}/finalSite/${project.artifactId}/</url>
+            <url>${site.distributionRootUrl}/${project.artifactId}/</url>
         </site>
     </distributionManagement>
 </project>

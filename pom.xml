@@ -16,6 +16,7 @@
         <!--Works in theory, except this gets evaluated in each subproject I believe... -->
         <!--<root.build.outputDirectory>${project.build.directory}</root.build.outputDirectory>-->
         <root.build.outputDirectory>${user.dir}/target</root.build.outputDirectory>
+        <site.distributionRootUrl>file://${root.build.outputDirectory}/www/${project.version}</site.distributionRootUrl>
     </properties>
 
 
@@ -103,7 +104,7 @@
             <id>maven-site</id>
             <name>Simple Toggles</name>
             <!-- Not used unless you try to deploy -->
-            <url>file://${root.build.outputDirectory}/finalSite</url>
+            <url>${site.distributionRootUrl}</url>
         </site>
     </distributionManagement>
 </project>
