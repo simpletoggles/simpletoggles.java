@@ -12,8 +12,14 @@
     </skin>
 
     <body>
-        <menu name="Stuff">
-            <item name="Overview" href="overview.html"/>
+        <menu name="Overview">
+            <item name="Introduction" href="overview/introduction.html"/>
+            <item name="Goals" href="overview/goals.html"/>
+            <item name="Release Cadence" href="overview/release_cadence.html"/>
+            <item name="Setup" href="overview/setup.html"/>
+            <item name="Usage" href="overview/usage.html"/>
+            <item name="FAQ" href="overview/faq.html"/>
+            <item name="Release Notes" href="overview/release_notes.html"/>
         </menu>
         <menu ref="parent"/>
         <menu ref="modules"/>
