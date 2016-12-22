@@ -55,6 +55,12 @@
                             <artifactId>maven-javadoc-plugin</artifactId>
                             <version>2.10.4</version>
                         </dependency>
+                        <dependency>
+                            <groupId>org.apache.maven.doxia</groupId>
+                            <artifactId>doxia-module-markdown</artifactId>
+                            <version>1.7</version>
+                        </dependency>
+
                     </dependencies>
                 </plugin>
                 <plugin>
@@ -71,6 +77,8 @@
                         </execution>
                     </executions>
                 </plugin>
+
+
             </plugins>
         </pluginManagement>
     </build>
